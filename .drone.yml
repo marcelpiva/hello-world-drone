@@ -1,10 +1,9 @@
+---
 kind: pipeline
-type: docker
+type: ssh
 name: default
 
 steps:
-  - name: test
-    image: alpine
-    commands:
-    - echo hello
-    - echo world
+- name: greeting
+  commands:
+  - echo hello world
