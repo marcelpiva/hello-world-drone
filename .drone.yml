@@ -1,8 +1,9 @@
+---
 kind: pipeline
+type: ssh
 name: default
 
 steps:
-- name: greetings
-  image: alpine
+- name: greeting
   commands:
-  - echo bonjour monde
+  - echo hello world
